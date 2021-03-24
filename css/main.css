@@ -1,0 +1,155 @@
+/* Delete all default values of tagas */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/* navigation section with image , navigation menu and burger menu */
+.nav-main {
+  position: fixed;
+  z-index: 9999;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.8);
+}
+.nav-menu {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.nav-logo {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-logo img {
+  object-fit: cover;
+  object-position: center;
+  height: 8vh;
+}
+.nav-menu li {
+  padding: 10px;
+  list-style: none;
+}
+/* hero section where i style hero image header and sub text  */
+.hero-container {
+  position: relative;
+}
+.hero-image {
+  height: 100vh;
+  width: 100%;
+}
+.hero-image img {
+  object-fit: cover;
+  object-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.hero-text {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100%;
+}
+.hero-header {
+  position: absolute;
+  transform: translate(-50%);
+  top: 40%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.hero-subtext {
+  position: absolute;
+  transform: translate(-50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 20px;
+}
+/* styleing main section */
+.section-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(237, 237, 237);
+}
+.about-container {
+  background-color: rgba(211, 203, 203, 0.4);
+  border-radius: 30px;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-container h2 {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 20px;
+}
+.about-subtext {
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+}
+.about-image img {
+  object-fit: cover;
+  object-position: center;
+  width: 50vw;
+  height: 60vh;
+  border-radius: 10px;
+}
+/* services section  */
+.section-services {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(237, 237, 237);
+}
+.services-image img {
+  object-fit: cover;
+  object-position: center;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+.services-container {
+  background-color: rgba(211, 203, 203, 0.4);
+  border-radius: 30px;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.services-container h2 {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 20px;
+}
+.services-subtext {
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+}
