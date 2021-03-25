@@ -6,6 +6,7 @@
 }
 a {
   text-decoration: none;
+  color: black;
 }
 /* navigation section with image , navigation menu and burger menu */
 .nav-main {
@@ -17,20 +18,23 @@ a {
   justify-content: center;
   height: 10vh;
   width: 100%;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.6);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .nav-menu {
   flex: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 20px;
+  font-size: 18px;
+  height: 100%;
 }
 .nav-logo {
   flex: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.9;
 }
 .nav-logo img {
   object-fit: cover;
@@ -38,12 +42,52 @@ a {
   height: 8vh;
 }
 .nav-menu li {
-  padding: 10px;
+  width: 100px;
   list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease-in-out;
+}
+.nav-menu li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu li:hover {
+  background-color: rgba(211, 203, 203, 0.8);
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.nav-burger {
+  display: none;
+}
+.nav-burger-list-container {
+  display: none;
+}
+.nav-burger-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 10vh;
+  left: 0%;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.6);
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.nav-burger-list li {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: bold;
 }
 /* hero section where i style hero image header and sub text  */
 .hero-container {
   position: relative;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 .hero-image {
   height: 100vh;
@@ -57,7 +101,6 @@ a {
 }
 .hero-text {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.4);
   top: 0%;
   left: 0%;
   height: 100vh;
@@ -72,6 +115,7 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 30px;
+  color: rgb(13, 13, 173);
 }
 .hero-subtext {
   position: absolute;
@@ -84,6 +128,7 @@ a {
   font-size: 24px;
   text-align: center;
   padding-top: 20px;
+  color: rgb(12, 1, 36);
 }
 /* styleing main section */
 .section-about {
@@ -93,6 +138,7 @@ a {
   height: 100vh;
   width: 100%;
   background-color: rgb(237, 237, 237);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
 }
 .about-container {
   background-color: rgba(211, 203, 203, 0.4);
@@ -101,6 +147,10 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+}
+.about-container:hover {
+  background-color: rgba(211, 203, 203, 0.8);
 }
 .about-container h2 {
   font-size: 26px;
@@ -118,6 +168,7 @@ a {
   width: 50vw;
   height: 60vh;
   border-radius: 10px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
 }
 /* services section  */
 .section-services {
@@ -126,7 +177,8 @@ a {
   justify-content: space-around;
   height: 100vh;
   width: 100%;
-  background-color: rgb(237, 237, 237);
+  background-color: rgb(237, 237, 237, 0.8);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
 }
 .services-image img {
   object-fit: cover;
@@ -134,6 +186,7 @@ a {
   width: 50vw;
   height: 50vh;
   border-radius: 10px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
 }
 .services-container {
   background-color: rgba(211, 203, 203, 0.4);
@@ -142,6 +195,10 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+}
+.services-container:hover {
+  background-color: rgba(211, 203, 203, 0.8);
 }
 .services-container h2 {
   font-size: 26px;
@@ -152,4 +209,116 @@ a {
   text-align: center;
   font-size: 14px;
   padding: 20px;
+}
+/* Contact us section */
+.section-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(237, 237, 237);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-container input {
+  margin: 10px;
+}
+/* footer style */
+.footer-main {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(211, 203, 203, 0.6);
+}
+/* media querry */
+@media screen and (max-width: 700px) {
+  .nav-menu {
+    font-size: 14px;
+  }
+  .hero-header {
+    font-size: 20px;
+  }
+  .hero-subtext {
+    font-size: 14px;
+  }
+  .section-about {
+    flex-direction: column;
+  }
+  .about-container {
+    width: 80vw;
+    height: 40vh;
+    overflow: auto;
+  }
+  .about-image {
+    width: 80vw;
+    height: 40vh;
+  }
+  .about-image img {
+    object-fit: contain;
+    object-position: center;
+    width: inherit;
+    height: inherit;
+  }
+  .section-services {
+    flex-direction: column;
+  }
+  .services-container {
+    width: 80vw;
+    height: 40vh;
+    overflow: auto;
+  }
+  .services-image {
+    width: 80vw;
+    height: 40vh;
+  }
+  .services-image img {
+    object-fit: contain;
+    object-position: center;
+    width: inherit;
+    height: inherit;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-logo {
+    justify-content: start;
+  }
+  .nav-burger {
+    display: flex;
+  }
+  .nav-burger label {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .nav-burger label img {
+    object-fit: contain;
+    object-position: center;
+  }
+  .nav-burger input {
+    display: none;
+  }
+  .nav-burger input:checked ~ .nav-burger-list-container {
+    display: flex;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero-header {
+    width: 80vw;
+    font-size: 16px;
+  }
+  .hero-subtext {
+    width: 80vw;
+    font-size: 10px;
+  }
 }

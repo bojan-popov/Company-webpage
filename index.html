@@ -18,11 +18,27 @@
         <div class="nav-logo">
           <img src="./img/logo.png" alt="logo" />
         </div>
+        <div class="nav-burger">
+          <input type="checkbox" name="burger" id="burger" />
+          <label for="burger">
+            <img src="./img/nav-burger.png" alt="burger-menu" />
+          </label>
+          <div class="nav-burger-list-container">
+            <ul class="nav-burger-list">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
         <ul class="nav-menu">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
+        <div class="burger"></div>
       </nav>
       <div class="hero-container">
         <div class="hero-image">
@@ -30,7 +46,7 @@
         </div>
         <div class="hero-text">
           <div class="hero-header">
-            <h1>Company name</h1>
+            <h1>ZMMZ trans</h1>
           </div>
           <div class="hero-subtext">
             ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
@@ -41,18 +57,20 @@
     </header>
     <main>
       <section class="section-about">
-        <div class="about-container">
-          <h2>What we do , What we are</h2>
-          <div class="about-subtext">
-            ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Tenetur suscipit nesciunt quia voluptatibus similique in aliquam
-            reprehenderit quidem esse doloribus et consequuntur quo ut itaque
-            corporis sunt eveniet illum, harum ipsam provident fugiat unde
-            officiis voluptatum. Consequuntur, cumque quia, nemo praesentium at
-            cupiditate non, quasi minus voluptas voluptates numquam? Enim quo
-            aliquid maiores soluta,ntore.
+        <a href="./about.html">
+          <div class="about-container">
+            <h2>What we do , What we are</h2>
+            <div class="about-subtext">
+              ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Tenetur suscipit nesciunt quia voluptatibus similique in aliquam
+              reprehenderit quidem esse doloribus et consequuntur quo ut itaque
+              corporis sunt eveniet illum, harum ipsam provident fugiat unde
+              officiis voluptatum. Consequuntur, cumque quia, nemo praesentium
+              at cupiditate non, quasi minus voluptas voluptates numquam? Enim
+              quo aliquid maiores soluta,ntore.
+            </div>
           </div>
-        </div>
+        </a>
         <div class="about-image">
           <img src="./img/about-us.png" alt="" />
         </div>
@@ -62,22 +80,39 @@
           <img src="./img/service.png" alt="services" />
         </div>
         <div class="services-container">
-          <h2>What we do , What we are</h2>
-          <div class="services-subtext">
-            ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Tenetur suscipit nesciunt quia voluptatibus similique in aliquam
-            reprehenderit quidem esse doloribus et consequuntur quo ut itaque
-            corporis sunt eveniet illum, harum ipsam provident fugiat unde
-            officiis voluptatum. Consequuntur, cumque quia, nemo praesentium at
-            cupiditate non, quasi minus voluptas voluptates numquam? Enim quo
-            aliquid maiores soluta,ntore.
-          </div>
+          <a href="./services.html"
+            ><h2>What we do , What we are</h2>
+            <div class="services-subtext">
+              ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Tenetur suscipit nesciunt quia voluptatibus similique in aliquam
+              reprehenderit quidem esse doloribus et consequuntur quo ut itaque
+              corporis sunt eveniet illum, harum ipsam provident fugiat unde
+              officiis voluptatum. Consequuntur, cumque quia, nemo praesentium
+              at cupiditate non, quasi minus voluptas voluptates numquam? Enim
+              quo aliquid maiores soluta,ntore.
+            </div>
+          </a>
         </div>
       </section>
+      <section class="section-contact">
+        <h3>Contact us :</h3>
+        <form class="form-container">
+          <input type="text" placeholder="Full name ..." />
+          <input type="email" placeholder="Your email ..." />
+          <input type="text" placeholder="Subject ..." />
+          <textarea
+            placeholder="Your message ..."
+            cols="25"
+            rows="2"
+          ></textarea>
+        </form>
+      </section>
     </main>
-    <footer></footer>
-    <section></section>
-    <footer></footer>
+    <footer>
+      <section class="footer-main">
+        <h4>copyrights Bojan</h4>
+      </section>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
